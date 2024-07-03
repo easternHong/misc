@@ -37,6 +37,7 @@ export class ImageSelector extends Component<Props, Props> implements ISelector 
 
 
     handleChange(event: React.ChangeEvent<HTMLInputElement>) {
+        if (!event.target.files) return;
         const fileObject: File | null = event.target.files[0];
         if (!fileObject) return;
         this.fileHandler?.current?.readLocalFile(fileObject)
@@ -83,7 +84,8 @@ export class ImageSelector extends Component<Props, Props> implements ISelector 
                             className='w-full pl-1 h-8 border rounded border-amber-400'/>
                     <button
                         onClick={() => {
-                            this.remoteImageRef.current.value = ''
+                            if (this.remoteImageRef.current)
+                                this.remoteImageRef.current.value = ''
                         }}
                         className='w-12 ml-2 relative rounded rounded-5 bg-blue-200'>x
                     </button>
