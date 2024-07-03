@@ -9,7 +9,7 @@ export default function Header({currentRef}: Props) {
             <div className='flex h-14 ml-1.5'>
                 <a href="/" className='m-auto w-12 h-12'>
                     <img
-                        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                        // src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                         alt="Company Logo"/>
                 </a>
                 <ul className='flex flex-row m-auto'>
