@@ -1,4 +1,3 @@
-import axios from "axios";
 import {useEffect, useState} from "react";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 import {ListGroup} from "react-bootstrap";
@@ -50,11 +49,11 @@ const NotesPanel = () => {
     }
 
     function loadNotes() {
-        axios.get('http://localhost:3001/notes').then(response => {
-            const noteList = response.data
-            setNotes(noteList)
-            console.log(noteList)
-        })
+        // axios.get('http://localhost:3001/notes').then(response => {
+        //     const noteList = response.data
+        //     setNotes(noteList)
+        //     console.log(noteList)
+        // })
     }
 
     useEffect(() => {

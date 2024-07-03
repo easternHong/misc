@@ -7,7 +7,7 @@ export default function About() {
     return (
         <div className='col w-full'>
             <div
-                className="h-full w-full bg-cover bg-[url('https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-assets/images/about/BG.png~tplv-t2oaga2asx-image.image')]">
+                className="h-full w-full bg-cover">
                 <div className='text-center text-white h-screen content-center justify-center'>
                     <p>一个帮助开发者成长的社区</p>
                     <p className='mt-5'>Become a Better Developer by Sharing and Learning</p>
